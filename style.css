@@ -1,0 +1,75 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2563eb, #1e293b);
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Sections */
+.section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #38bdf8;
+}
+
+/* Skills grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.card {
+  background: #1e293b;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Projects */
+.project {
+  background: #1e293b;
+  margin: 15px auto;
+  padding: 15px;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+}
