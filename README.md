@@ -2,7 +2,6 @@
 
 Welcome to my personal developer portfolio website! This repository contains the source code for my portfolio, showcasing my skills, coding projects, and professional background.
 
-Live Website: [https://anilkumar.is-a.dev](https://anilkumar.is-a.dev)
 
 ---
 
