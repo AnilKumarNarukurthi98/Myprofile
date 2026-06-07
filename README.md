@@ -19,4 +19,3 @@ Welcome to my personal developer portfolio website! This repository contains the
 ```text
 ├── index.html       # Main webpage file containing the portfolio structure
 ├── style.css        # Stylesheet containing layouts, colors, and fonts
-└── CNAME            # Configuration file routing the custom subdomain
