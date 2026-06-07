@@ -1,4 +1,21 @@
+
+
+
 /* Custom Variable Framework System */
+
+/* High-Impact Resume CTA Button */
+.resume-btn {
+  background: linear-gradient(135deg, var(--accent-neon), var(--accent-purple));
+  color: var(--base-dark) !important;
+  font-weight: 700;
+  border: none;
+}
+
+.resume-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(56, 189, 248, 0.3);
+  opacity: 0.95;
+}
 :root {
   --base-dark: #030712;
   --panel-dark: #0b1329;
