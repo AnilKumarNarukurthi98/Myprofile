@@ -1,23 +1,27 @@
-/* Custom Configuration System */
+/* ==========================================================================
+   1. CORE APP VARIABLE SYSTEM
+   ========================================================================== */
 :root {
   --accent: #38bdf8;
   --text-main: #f3f4f6;
   --text-muted: #9ca3af;
-  --glass-bg: rgba(30, 41, 59, 0.45);
-  --glass-border: rgba(255, 255, 255, 0.05);
-  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --glass-bg: rgba(15, 23, 42, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.04);
+  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Base Body Layout */
+/* ==========================================================================
+   2. RE-INITIALIZATION & STRUCTURAL SETUP
+   ========================================================================== */
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color: var(--text-main);
-  background-color: #0b1120;
+  background-color: #0a0f1d;
   overflow-x: hidden;
 }
 
-/* Dynamic Particles Canvas Container Block */
+/* Canvas Viewport Locking Frame */
 #tsparticles {
   position: fixed;
   top: 0;
@@ -27,26 +31,26 @@ body {
   z-index: -1;
 }
 
-/* Structural Wrapper Component */
 .content-wrapper {
   max-width: 900px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
-/* Clean Formatted Section Headers */
 h2 {
   color: var(--accent);
-  font-size: 2rem;
-  margin-bottom: 30px;
+  font-size: 2.2rem;
+  margin-bottom: 35px;
   font-weight: 800;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
 }
 
-/* Upgraded Main Hero Structure */
+/* ==========================================================================
+   3. HERO FRAMEWORK AND PROFILE INTEGRATION
+   ========================================================================== */
 .hero {
   text-align: center;
-  padding: 120px 20px 80px;
+  padding: 140px 20px 90px;
   position: relative;
 }
 
@@ -56,57 +60,59 @@ h2 {
 }
 
 .profile-frame {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .profile-pic {
-  width: 130px;
-  height: 130px;
+  width: 135px;
+  height: 135px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--accent);
-  box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+  box-shadow: 0 0 35px rgba(56, 189, 248, 0.25);
   transition: var(--transition);
 }
 
 .profile-pic:hover {
-  transform: scale(1.05) rotate(2deg);
+  transform: scale(1.06) rotate(3deg);
   border-color: #6366f1;
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.4);
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 800;
-  letter-spacing: -0.03em;
-  margin-bottom: 15px;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .highlight {
-  background: linear-gradient(135deg, #fff 20%, var(--accent) 80%);
+  background: linear-gradient(135deg, #ffffff 10%, var(--accent) 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .subtitle {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: var(--text-muted);
-  max-width: 550px;
-  margin: 0 auto 35px;
+  max-width: 600px;
+  margin: 0 auto 40px;
 }
 
-/* Interactive Action Controllers */
+/* Interactive Dashboard Buttons */
 .buttons {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 28px;
-  border-radius: 10px;
+  padding: 14px 32px;
+  border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.95rem;
@@ -115,155 +121,172 @@ h2 {
 
 .btn-primary {
   background: var(--accent);
-  color: #0b1120;
+  color: #0a0f1d;
 }
 
 .btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(56, 189, 248, 0.35);
-  opacity: 0.95;
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.4);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.03);
   color: var(--text-main);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.07);
   border-color: var(--text-main);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
-/* Core Document Layout Blocks */
+/* ==========================================================================
+   4. CONTENT DEPLOYMENTS AND SECTIONS
+   ========================================================================== */
 .section {
-  padding: 80px 0;
+  padding: 90px 0;
   text-align: center;
 }
 
 #about p {
-  font-size: 1.15rem;
-  line-height: 1.7;
+  font-size: 1.2rem;
+  line-height: 1.75;
   color: var(--text-muted);
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-  padding: 30px;
-  border-radius: 16px;
-  backdrop-filter: blur(8px);
+  padding: 35px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-align: justify;
 }
 
-/* Responsive Structural Skills Matrix Grid */
+/* Responsive Structural Technical Grid Matrix */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px;
 }
 
 .card {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-  padding: 18px;
-  border-radius: 12px;
-  backdrop-filter: blur(8px);
+  padding: 20px;
+  border-radius: 14px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   font-weight: 600;
   font-size: 0.95rem;
   transition: var(--transition);
 }
 
 .skill-card:hover {
-  transform: scale(1.05);
-  background: rgba(56, 189, 248, 0.08);
+  transform: translateY(-5px);
+  background: rgba(56, 189, 248, 0.06);
   border-color: var(--accent);
   color: var(--accent);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.05);
 }
 
-/* Enterprise Production Card Systems */
+/* ==========================================================================
+   5. ENTERPRISE SHOWCASE STACK (PROJECT CARDS)
+   ========================================================================== */
 .project-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 }
 
 .project-card {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-  backdrop-filter: blur(8px);
-  padding: 35px;
-  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 20px;
   text-align: left;
   transition: var(--transition);
 }
 
 .project-card:hover {
-  transform: translateY(-4px) translateX(4px);
+  transform: translateY(-5px) translateX(3px);
   border-color: rgba(56, 189, 248, 0.25);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
 .project-meta {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: var(--accent);
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .project-card h3 {
-  margin: 0 0 10px 0;
-  font-size: 1.4rem;
-  font-weight: 700;
+  margin: 0 0 12px 0;
+  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 .project-card p {
   margin: 0;
   color: var(--text-muted);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
-/* Glassmorphic Contact System Container */
+/* ==========================================================================
+   6. GLASSMORPHIC COMMUNICATIONS INTERFACE
+   ========================================================================== */
 .contact-box {
   background: var(--glass-bg);
   border: 1px solid var(--glass-border);
-  backdrop-filter: blur(8px);
-  padding: 35px;
-  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 20px;
   display: inline-block;
   text-align: left;
 }
 
 .contact-box p {
-  font-size: 1.1rem;
-  margin: 12px 0;
+  font-size: 1.15rem;
+  margin: 14px 0;
 }
 
 .contact-box a {
   color: var(--accent);
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
+  font-weight: 600;
+  transition: color 0.2s ease;
 }
 
 .contact-box a:hover {
-  color: #fff;
+  color: #ffffff;
   text-decoration: underline;
 }
 
-/* Minimalist Production Footer Area */
+/* ==========================================================================
+   7. RUNTIME ENVIRONMENT FOOTER
+   ========================================================================== */
 footer {
   text-align: center;
-  padding: 40px 20px;
+  padding: 50px 20px;
   color: var(--text-muted);
   border-top: 1px solid var(--glass-border);
   font-size: 0.9rem;
 }
 
-/* Fluid Viewport Adaptations */
+/* ==========================================================================
+   8. FLUID RESPONSIVE STRUCTURAL OVERRIDES
+   ========================================================================== */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 2.3rem; }
-  .project-card { padding: 25px; }
+  .hero h1 { font-size: 2.4rem; }
+  .project-card { padding: 30px; }
   .buttons { flex-direction: column; align-items: center; }
-  .btn { width: 100%; max-width: 280px; text-align: center; }
+  .btn { width: 100%; max-width: 300px; text-align: center; }
+  #about p { text-align: left; }
 }
