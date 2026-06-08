@@ -14,11 +14,20 @@
 
 <style>@media(max-width:768px){
 
-nav{
-top:10px;
-width:95%;
+.menu-toggle{
+position:absolute;
+right:20px;
+top:18px;
+font-size:28px;
+display:block;
 }
 
+.theme-toggle{
+position:absolute;
+right:60px;
+top:18px;
+}
+}
 .hero{
 min-height:auto;
 padding-top:200px;
@@ -635,21 +644,25 @@ height:140px;
 
 <div class="logo">ANIL</div>
 
-<div class="menu-toggle" onclick="toggleMenu()">
-☰
-</div>
-
-<ul id="mobileMenu">
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-</ul>
+<div class="nav-right">
 
 <div class="theme-toggle" onclick="toggleTheme()">
 🌙
 </div>
+
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+</div>
+
+<ul id="mobileMenu">
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 
 </nav>
 
