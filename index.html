@@ -386,7 +386,153 @@ height:160px;
 }
 
 }
+.section{
+padding:120px 10%;
+}
 
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+font-size:3rem;
+text-align:center;
+margin-bottom:60px;
+color:#38bdf8;
+}
+
+.glass-card{
+
+background:rgba(255,255,255,.04);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+padding:40px;
+
+border-radius:25px;
+
+line-height:1.9;
+}
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+}
+
+.skill-card{
+
+background:rgba(255,255,255,.04);
+
+padding:25px;
+
+border-radius:20px;
+
+backdrop-filter:blur(20px);
+}
+
+.progress{
+
+height:12px;
+
+background:#1e293b;
+
+border-radius:30px;
+
+margin-top:15px;
+
+overflow:hidden;
+}
+
+.progress span{
+
+display:block;
+
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+#38bdf8,
+#8b5cf6
+);
+
+border-radius:30px;
+}
+
+.timeline{
+max-width:900px;
+margin:auto;
+}
+
+.timeline-item{
+
+background:rgba(255,255,255,.04);
+
+padding:30px;
+
+margin-bottom:25px;
+
+border-left:4px solid #38bdf8;
+
+border-radius:20px;
+}
+
+.project-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+
+gap:25px;
+}
+
+.project-card{
+
+background:rgba(255,255,255,.04);
+
+padding:35px;
+
+border-radius:20px;
+
+backdrop-filter:blur(20px);
+
+transition:.4s;
+}
+
+.project-card:hover{
+
+transform:
+translateY(-10px)
+scale(1.02);
+
+box-shadow:
+0 20px 50px rgba(56,189,248,.15);
+}
+
+.contact-card{
+text-align:center;
+}
+
+footer{
+
+padding:60px;
+
+text-align:center;
+
+border-top:
+1px solid rgba(255,255,255,.08);
+
+margin-top:80px;
+}
 </style>
 
 </head>
@@ -472,3 +618,309 @@ Download Resume
 </div>
 
 </section>
+<!-- ABOUT -->
+
+<section id="about" class="section">
+
+<div class="container">
+
+<h2 class="section-title">About Me</h2>
+
+<div class="glass-card">
+
+<p>
+I'm Anil Kumar Narukurthi, a .NET Full Stack Developer with 4+ years of experience building enterprise-grade applications using ASP.NET Core, MVC, Web API, React.js, SQL Server, JavaScript and modern web technologies.
+</p>
+
+<p>
+Currently working as an Associate Software Engineer, delivering scalable government and enterprise solutions including APCCE, APPCB and Mana Amaravathi platforms.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills" class="section">
+
+<div class="container">
+
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>C#</h3>
+<div class="progress"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill-card">
+<h3>ASP.NET Core</h3>
+<div class="progress"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill-card">
+<h3>React.js</h3>
+<div class="progress"><span style="width:90%"></span></div>
+</div>
+
+<div class="skill-card">
+<h3>SQL Server</h3>
+<div class="progress"><span style="width:92%"></span></div>
+</div>
+
+<div class="skill-card">
+<h3>Web API</h3>
+<div class="progress"><span style="width:95%"></span></div>
+</div>
+
+<div class="skill-card">
+<h3>JavaScript</h3>
+<div class="progress"><span style="width:88%"></span></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXPERIENCE -->
+
+<section id="experience" class="section">
+
+<div class="container">
+
+<h2 class="section-title">Experience</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>Associate Software Engineer</h3>
+<h4>APTONLINE LIMITED</h4>
+<p>2022 - Present</p>
+<p>
+Working on enterprise applications using ASP.NET Core, React.js and SQL Server.
+</p>
+</div>
+
+<div class="timeline-item">
+<h3>Government Projects</h3>
+<h4>APCCE, APPCB, APCRDA</h4>
+<p>
+Designed APIs, dashboards and management systems used across Andhra Pradesh.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="section">
+
+<div class="container">
+
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<h3>APCCE</h3>
+
+<p>
+Educational Management System for colleges across Andhra Pradesh.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>APPCB</h3>
+
+<p>
+Waste Management Monitoring and Analytics Platform.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Mana Amaravathi</h3>
+
+<p>
+Citizen services and API platform for APCRDA.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="section">
+
+<div class="container">
+
+<h2 class="section-title">Contact</h2>
+
+<div class="glass-card contact-card">
+
+<p>
+📧 anilkumarnarukurthi98@gmail.com
+</p>
+
+<p>
+💼 LinkedIn
+</p>
+
+<p>
+🐙 GitHub
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 Anil Kumar Narukurthi
+</p>
+
+</footer>
+<script>
+
+const roles = [
+".NET Full Stack Developer",
+"React.js Developer",
+"ASP.NET Core Expert",
+"SQL Server Specialist",
+"Cloud Enthusiast"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeEffect(){
+
+const current = roles[roleIndex];
+
+const typing = document.getElementById("typing");
+
+if(!deleting){
+
+typing.innerHTML =
+current.substring(0,charIndex++);
+
+}else{
+
+typing.innerHTML =
+current.substring(0,charIndex--);
+
+}
+
+if(charIndex === current.length + 1){
+
+deleting = true;
+
+setTimeout(typeEffect,1000);
+
+return;
+}
+
+if(charIndex === 0){
+
+deleting = false;
+
+roleIndex =
+(roleIndex + 1) % roles.length;
+
+}
+
+setTimeout(
+typeEffect,
+deleting ? 50 : 100
+);
+
+}
+
+typeEffect();
+
+function toggleTheme(){
+
+document.body.classList.toggle("light");
+
+}
+
+/* Mouse Glow */
+
+document.addEventListener("mousemove",(e)=>{
+
+const glow =
+document.getElementById("cursor-glow");
+
+glow.style.left =
+e.clientX + "px";
+
+glow.style.top =
+e.clientY + "px";
+
+});
+
+/* Particles */
+
+tsParticles.load("tsparticles",{
+
+preset:"links",
+
+background:{
+color:{
+value:"transparent"
+}
+},
+
+particles:{
+
+color:{
+value:"#38bdf8"
+},
+
+links:{
+enable:true,
+distance:150,
+opacity:.15,
+color:"#38bdf8"
+},
+
+move:{
+enable:true,
+speed:1
+},
+
+number:{
+value:80
+}
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
