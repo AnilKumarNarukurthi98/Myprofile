@@ -543,6 +543,58 @@ border-top:
 
 margin-top:80px;
 }
+  .menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:var(--text);
+}
+
+@media(max-width:768px){
+
+nav{
+padding:15px 20px;
+}
+
+.menu-toggle{
+display:block;
+}
+
+nav ul{
+display:none;
+position:absolute;
+top:70px;
+left:0;
+width:100%;
+
+background:rgba(15,23,42,.95);
+
+backdrop-filter:blur(20px);
+
+flex-direction:column;
+text-align:center;
+padding:20px 0;
+
+border-radius:0 0 20px 20px;
+}
+
+nav ul.active{
+display:flex;
+}
+
+.hero{
+padding-top:180px;
+}
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.profile-img{
+width:140px;
+height:140px;
+}
+}
 </style>
 
 </head>
@@ -563,12 +615,16 @@ margin-top:80px;
 
 <div class="logo">ANIL</div>
 
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#contact">Contact</a></li>
+<div class="menu-toggle" onclick="toggleMenu()">
+☰
+</div>
+
+<ul id="mobileMenu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
 </ul>
 
 <div class="theme-toggle" onclick="toggleTheme()">
@@ -940,7 +996,13 @@ value:80
 }
 
 });
+function toggleMenu(){
 
+document
+.getElementById("mobileMenu")
+.classList.toggle("active");
+
+}
 </script>
 
 </body>
